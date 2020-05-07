@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Bang Faster",
+  "version": "0.1",
+  "description": "Processes DuckDuckGo !bangs client-side ",
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "*://duckduckgo.com/*",
+    "https://duckduckgo.com/bang.js"
+  ],
+  "background": {
+    "scripts": [
+      "browser-polyfill.min.js",
+      "background.js"
+    ]
+  }
+}
