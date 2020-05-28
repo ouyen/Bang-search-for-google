@@ -34,7 +34,7 @@ function redirect (requestDetails) {
 
   if (foundMatchingBang) {
     return {
-      redirectUrl: newSearchURL.replace('{{{s}}}', string)
+      redirectUrl: newSearchURL.replace('{{{s}}}', encodeURIComponent(string))
     }
   } else {
     return {
