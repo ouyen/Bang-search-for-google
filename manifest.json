@@ -1,10 +1,13 @@
 {
   "manifest_version": 2,
   "name": "DuckDuckGo !bangs but Faster",
-  "version": "0.1",
-  "description": "Processes DuckDuckGo !bangs client-side ",
+  "version": "0.2",
+  "description": "Processes DuckDuckGo !bangs client-side",
   "icons": {
-    "48": "icons/border-48.png"
+    "16": "icons/icon-16.png",
+    "24": "icons/icon-24.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
   },
   "permissions": [
     "webRequest",
