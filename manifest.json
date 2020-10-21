@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "DuckDuckGo !bangs but Faster",
-  "version": "0.2",
+  "version": "0.2.1",
   "description": "Processes DuckDuckGo !bangs client-side",
   "icons": {
     "16": "icons/icon-16.png",
