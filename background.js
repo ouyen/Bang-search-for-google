@@ -1,8 +1,12 @@
-const pattern = '*://duckduckgo.com/*'
+const pattern = [
+  '*://*.google.com/*',
+  '*://*.bing.com/*'
+]
 const lookup = {}
 
 // eslint-disable-next-line no-undef
-fetch('https://duckduckgo.com/bang.js')
+// https://duckduckgo.com/bang.js
+fetch('bang.js')
   .then(data => data.json())
   .then(json => {
     json.forEach(entry => {
@@ -55,13 +59,13 @@ function rewriteCSP (requestDetails) {
 // eslint-disable-next-line no-undef
 browser.webRequest.onBeforeRequest.addListener(
   redirect,
-  { urls: [pattern], types: ['main_frame'] },
+  { urls: pattern, types: ['main_frame'] },
   ['blocking']
 )
 
 // eslint-disable-next-line no-undef
 chrome.webRequest.onHeadersReceived.addListener(
   rewriteCSP,
-  { urls: [pattern] },
+  { urls: pattern },
   ['blocking', 'responseHeaders']
 )
