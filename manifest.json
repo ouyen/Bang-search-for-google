@@ -20,5 +20,10 @@
       "browser-polyfill.min.js",
       "background.js"
     ]
+  },
+  "applications": {
+    "gecko": {
+      "id": "bangsearch@example.com"
+    }
   }
 }

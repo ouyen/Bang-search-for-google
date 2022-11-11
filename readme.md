@@ -5,3 +5,7 @@ For example, use "!w Rome" to search for Rome on Wikipedia, or "!a shoes" to sea
 fork from https://gitlab.com/Inclushe/duckduckgo-bangs-but-faster/
 
 MIT License
+
+## TODO
+
+refer to https://www.sitepoint.com/create-firefox-add-on/ to add custom bang
