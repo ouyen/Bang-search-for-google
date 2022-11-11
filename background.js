@@ -1,6 +1,7 @@
 const pattern = [
   '*://*.google.com/*',
-  '*://*.bing.com/*'
+  '*://*.bing.com/*',
+  '*://*.duckduckgo.com/*'
 ]
 const lookup = {}
 

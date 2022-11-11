@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Bang search for google",
+  "version": "2.0.0",
+  "description": "bring the duckduckgo bang search to google and bing",
+  "icons": {
+    "16": "icons/bang.svg",
+    "24": "icons/bang.svg",
+    "48": "icons/bang.svg",
+    "128": "icons/bang.svg"
+  },
+  "permissions": [
+    "webRequest"
+  ],
+  "host_permissions": [
+    "*://*.google.com/*",
+    "*://*.bing.com/*",
+    "*://*.duckduckgo.com/*"
+  ],
+  "background": {
+    "service_worker": "browser-polyfill.min.js"
+  }
+}
