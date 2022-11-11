@@ -18,6 +18,7 @@
     "*://*.duckduckgo.com/*"
   ],
   "background": {
-    "service_worker": "browser-polyfill.min.js"
+    "service_worker": "browser-polyfill.min.js",
+    "type": "module" 
   }
 }
